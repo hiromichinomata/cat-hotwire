@@ -2,13 +2,6 @@
   <%= bootstrap_form_with(model: cat) do |form| %>
     <div class="row py-2 border-top">
       <div class="col-4">
-
-        <%# _cat.html.erbの見た目に合うように、フォームの見た目を修正する %>
-        <%# オプションはbootstrap_formのもので、詳細は以下の通り %>
-        <%# skip_label: ラベルは不要 %>
-        <%# label_as_placeholder: ラベルをプレースホルダーとして使う %>
-        <%# wrapper: <div>ラッパーは不要 %>
-        <%# control_class: コントロールのclass属性を指定 %>
         <%= form.text_field :name,
                             skip_label: true,
                             label_as_placeholder: true,
